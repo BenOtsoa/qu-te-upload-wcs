@@ -1,0 +1,8 @@
+extend layout
+
+block content
+    h1= `Salut télécharge ton image stp: - de 3mo et format PNG`
+    form(method='POST', enctype="multipart/form-data" action="/uploaddufichier")
+        div    
+            input(type='file', name='monFichier', accept='image/png', size=3000000, multiple)
+        button(type='submit') SEND

@@ -1,0 +1,9 @@
+extend layout
+
+block content
+    h1=`Ton ID actuelle est ${id}`
+    form(method='POST', action='/users/${id}?_method=DELETE')
+        div    
+            label(for='id') ID : 
+            input#id(type='text', name='id', placeholder='your ID')
+        button(type='submit') SEND
